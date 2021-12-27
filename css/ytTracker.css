@@ -1,0 +1,273 @@
+.eh-video-found {
+    border: 5px solid #9c00ff;
+    border-radius: 10px;
+    padding: 10px;
+   position: relative;
+  animation: mymove 5s infinite;
+    box-shadow: 5px 5px 8px #9c00ff, 10px 10px 8px #ff00ff,
+background-color: #9c00ff;
+
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+@-webkit-keyframes eh-video-found-animation {
+    0%, 49% {
+        background-color: #9c00ff;
+    }
+    50%, 100% {
+        background-color: #ff00ff;
+    }
+}
+.eh-danger-text{
+    color:#ff00ff;
+    font-weight: 800;
+    background-color: #9c00ff;
+     border-radius: 10px;
+}
+.eh-task-status {
+    margin-bottom: 15px;
+    border: 5px solid #45038e;
+      box-shadow:
+    0 0 7px #45038e,
+    0 0 10px #45038e,
+    0 0 21px #45038e,
+    0 0 42px #45038e,
+    0 0 82px #5907b3,
+    0 0 92px #5907b3,
+    0 0 102px #c000ff,
+    0 0 151px #5907b3;
+    border-radius: 10px;
+
+
+    padding: 5px;
+    font-family: 'Open Sans', 'Arial';
+     background-color: #333131;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.eh-task-header {
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px solid #dedede;
+}
+
+.eh-task-header img {
+    width: 200px;
+}
+
+.eh-task {
+    padding: 15px 0px;
+     border-radius: 10px;
+}
+
+.eh-task > div {
+    float: left;
+}
+
+.eh-task:after {
+    content: ' ';
+    clear: both; 
+    display:block;
+}
+
+.eh-task-text {
+    font-size: 16px;
+    line-height: 35px;
+    width: calc(100% - 45px);
+     text-align: left;
+      color: #fff;
+  text-shadow:
+    0 0 7px #c000ff,
+    0 0 10px #c000ff,
+    0 0 21px #c000ff,
+    0 0 42px #c000ff,
+    0 0 82px #c000ff,
+    0 0 92px #c000ff,
+    0 0 102px #c000ff,
+    0 0 151px #c000ff;
+}
+
+.eh-ext-banner {
+    font-size: 12px;
+}
+
+.eh-task-status-icon {
+    color: #4c4c4c;
+    font-size: 30px;
+    width: 45px;
+    text-align: left;
+}
+
+.eh-task-completed .eh-task-status-icon {
+    color: #6800a9;
+    text-shadow: 0 0 0.2em #ff00f6, 0 0 0.2em #ff00f6,
+        0 0 0.2em #ff00f6;
+}
+
+.eh-task-info {
+    font-size: 13px;
+    margin-left: 45px;
+    clear: both;
+    width: calc(100% - 45px);
+}
+
+.eh-task-info.eh-time-left {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+     margin-right: 30px;
+  color: #fff;
+  text-shadow:
+    0 0 7px #c000ff,
+    0 0 10px #c000ff,
+    0 0 21px #c000ff,
+    0 0 42px #c000ff,
+    0 0 82px #c000ff,
+    0 0 92px #c000ff,
+    0 0 102px #c000ff,
+    0 0 151px #c000ff;
+}
+
+.eh-task-info.eh-time-left.few-sec-left {
+    color: #45038e;
+     text-shadow: 0 0 0.2em #ff00f6, 0 0 0.2em #ff00f6,
+        0 0 0.2em #ff00f6;
+}
+
+.eh-task-status .commentInfo input {
+    width: 90%;
+    padding: 10px;
+    font-size: 1.35rem;
+    border-radius: 3px;
+    border: 1px solid #444444;
+}
+
+.eh-task-status .commentInfo button {
+    padding: 8px 15px;
+    background: #2089d0;
+    color: #fff;
+   border-radius: 10px;
+    border: 0;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+#primary.ytd-watch-flexy #subscribe-button,
+#primary.ytd-watch-flexy #comments ytd-comment-simplebox-renderer {
+    position: relative;
+}
+
+/* required to avoid skip ad message getting cropped inside player area */
+.html5-video-player.ad-showing {
+    overflow: initial;
+}
+
+.eh-yt-highlight {
+    position: absolute;
+    top: 40px;
+    left: -35px;
+    z-index: 100000;
+}
+
+.eh-yt-highlight#likeBtnHighlight {
+    left: -90px;
+}
+
+.eh-yt-highlight#dislikeBtnHighlight {
+    left: -34px;
+}
+
+.eh-yt-highlight#subscribeBtnHighlight {
+    width: 350px;
+    left: -115px;
+}
+
+.eh-yt-highlight#postCommentHighlight {
+    left: 110px;
+    top: 25px;
+}
+
+.eh-yt-highlight#postReplyHighlight {
+    left: -134px;
+    top: 40px;
+}
+
+.eh-yt-highlight#likeCommentHighlight {
+    left: -80px;
+    top: 40px;
+}
+
+ytd-item-section-renderer.hidden-comments#sections {
+    opacity:0;
+    margin-left:-4000px;
+}
+
+.eh-yt-highlight#clickVidHighlight {
+    top: 155px;
+    left: calc(50% - 100px);
+}
+
+.eh-yt-highlight#skipAdHighlight {
+    left: auto;
+    top: auto;
+    bottom: -15px;
+    right: -15px;
+    box-shadow: none !important;
+    text-shadow: none;
+}
+
+.eh-yt-highlight .eh-arrow {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    color: red;
+    -webkit-animation: eh-yt-highlight-arrow-animation 1s infinite;  /* Safari 4+ */
+    -moz-animation: eh-yt-highlight-arrow-animation 1s infinite;  /* Fx 5+ */
+    -o-animation: eh-yt-highlight-arrow-animation 1s infinite;  /* Opera 12+ */
+    animation: eh-yt-highlight-arrow-animation 1s infinite;
+}
+
+.eh-yt-highlight .eh-text {
+    padding: 5px;
+    background-color: red;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: -2px;
+    -webkit-animation: eh-yt-highlight-text-animation 1s infinite;  /* Safari 4+ */
+    -moz-animation: eh-yt-highlight-text-animation 1s infinite;  /* Fx 5+ */
+    -o-animation: eh-yt-highlight-text-animation 1s infinite;  /* Opera 12+ */
+    animation: eh-yt-highlight-text-animation 1s infinite;
+}
+
+@-webkit-keyframes eh-yt-highlight-arrow-animation {
+    0%, 49% {
+        color: #4CAF50;
+    }
+    50%, 100% {
+        color: #ff0000;
+    }
+}
+
+@-webkit-keyframes eh-yt-highlight-text-animation {
+    0%, 49% {
+        background-color: #4CAF50;
+    }
+    50%, 100% {
+        background-color: #ff0000;
+    }
+}
